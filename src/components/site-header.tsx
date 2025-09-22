@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import Image from "next/image"
 import Profile from "@/assets/vendor/profile.png";
+import Link from "next/link";
 export function SiteHeader() {
   const user = {
     name: "Abdur Khan",
@@ -28,8 +29,9 @@ export function SiteHeader() {
               <h1 className="font-bold">{user.name}</h1>
             </div>
           </div>
-          <div className="items-center gap-4 hidden md:flex">
-            <span>
+          <div className="items-center  flex gap-4 ">
+            <div className="hidden md:flex gap-4">
+              <span >
               <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M21 18.8242H20.25V3.82422C20.25 3.62531 20.171 3.43454 20.0303 3.29389C19.8897 3.15324 19.6989 3.07422 19.5 3.07422H14.25C14.0511 3.07422 13.8603 3.15324 13.7197 3.29389C13.579 3.43454 13.5 3.62531 13.5 3.82422V7.57422H9C8.80109 7.57422 8.61032 7.65324 8.46967 7.79389C8.32902 7.93454 8.25 8.12531 8.25 8.32422V12.0742H4.5C4.30109 12.0742 4.11032 12.1532 3.96967 12.2939C3.82902 12.4345 3.75 12.6253 3.75 12.8242V18.8242H3C2.80109 18.8242 2.61032 18.9032 2.46967 19.0439C2.32902 19.1845 2.25 19.3753 2.25 19.5742C2.25 19.7731 2.32902 19.9639 2.46967 20.1045C2.61032 20.2452 2.80109 20.3242 3 20.3242H21C21.1989 20.3242 21.3897 20.2452 21.5303 20.1045C21.671 19.9639 21.75 19.7731 21.75 19.5742C21.75 19.3753 21.671 19.1845 21.5303 19.0439C21.3897 18.9032 21.1989 18.8242 21 18.8242ZM15 4.57422H18.75V18.8242H15V4.57422ZM9.75 9.07422H13.5V18.8242H9.75V9.07422ZM5.25 13.5742H8.25V18.8242H5.25V13.5742Z"
@@ -63,7 +65,8 @@ export function SiteHeader() {
                 </defs>
               </svg>
             </span>
-            <button className="flex items-center gap-3 bg-[#FFE135] px-5 py-3 rounded-xl">
+            </div>
+            <button className="flex items-center md:gap-3 bg-[#FFE135] md:px-5 md:py-3 p-1 rounded-lg   md:rounded-xl">
               <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
@@ -72,7 +75,7 @@ export function SiteHeader() {
                   fill="#111827"
                 />
               </svg>
-              <span className="font-semibold">Add Inventory</span>
+              <Link href="/dashboard/add-inventory" className="font-semibold">Add Inventory</Link>
             </button>
           </div>
         </div>
