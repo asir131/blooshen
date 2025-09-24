@@ -612,7 +612,7 @@ const Page: React.FC = () => {
           </div>
 
           {/* Right Column - Photos */}
-          <div className="lg:col-span-1 lg:px-32">
+          <div className="lg:col-span-1 lg:px-20">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-semibold text-gray-900">Photos</h3>
               <Button
@@ -628,7 +628,7 @@ const Page: React.FC = () => {
 
             <div className="bg-[#F5F5F5] p-1 border border-[#E8E8E8] rounded-lg">
               <div
-                className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-gray-400 transition-colors h-64 flex flex-col items-center justify-center"
+                className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-gray-400 transition-colors h-72 flex flex-col items-center justify-center"
                 onClick={handleFileUpload}
               >
                 <div className="text-gray-400 mb-3">
