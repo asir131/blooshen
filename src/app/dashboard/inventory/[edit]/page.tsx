@@ -1,8 +1,9 @@
+import EditInventory from '@/components/Pages/Vendor/Inventory/EditInventory'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>setEdit</div>
+    <div><EditInventory/></div>
   )
 }
 
