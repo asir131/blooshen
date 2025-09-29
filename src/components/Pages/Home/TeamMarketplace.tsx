@@ -71,7 +71,7 @@ const TeamMarketplace: React.FC = () => {
               return (
                 <div
                   key={index}
-                  className="shadow-even shadow-md bg-white rounded-lg border border-gray-50 p-6 text-center flex flex-col items-center"
+                  className="shadow-even shadow-md bg-white rounded-2xl border border-gray-50 p-6 text-center flex flex-col items-center"
                 >
                   <div className="mb-4">
                     <Image

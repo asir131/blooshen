@@ -149,12 +149,12 @@ const TopRatedUsed: React.FC = () => {
 
                   {/* Card Content */}
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    <h3 className="text-lg  flex justify-center font-semibold text-gray-900 mb-3">
                       {car.title}
                     </h3>
 
                     {/* Author Info */}
-                    <div className="flex items-center space-x-3">
+                    <div className="flex justify-center items-center space-x-3">
                       <Image
                         width={32}
                         height={32}

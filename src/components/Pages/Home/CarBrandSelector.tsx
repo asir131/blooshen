@@ -146,9 +146,9 @@ const CarBrandSelector: React.FC<CarBrandSelectorProps> = ({
         <div className="inline-flex space-x-4 ">
           <button
             onClick={() => handleTabChange("new")}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+            className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 ${
               activeTab === "new"
-                ? "bg-[#FFE135]text-gray-900 shadow-sm"
+                ? "bg-[#FFE135] text-gray-900 shadow-sm"
                 : "text-gray-600 hover:text-gray-900"
             }`}
           >
@@ -156,9 +156,9 @@ const CarBrandSelector: React.FC<CarBrandSelectorProps> = ({
           </button>
           <button
             onClick={() => handleTabChange("used")}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+            className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 ${
               activeTab === "used"
-                ? "bg-[#FFE135] text-gray-900 shadow-sm"
+                ? "bg-[#F3F4F6] text-gray-900 shadow-sm"
                 : "text-gray-600 hover:text-gray-900"
             }`}
           >

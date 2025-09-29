@@ -21,7 +21,7 @@ const HeroBannerSection = () => (
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 md:px-8 lg:px-12 text-center text-white">
         {/* Logo + tagline */}
-        <h1 className="font-[Ashford] text-lg sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl  w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%]  font-bold leading-tight sm:leading-snug md:leading-normal mb-2 sm:mb-2 md:mb-4">
+        <h1 className=" text-lg sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl  w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%]  font-bold leading-tight sm:leading-snug md:leading-normal mb-2 sm:mb-2 md:mb-4">
           Find Your Next Car - with Confidence"
         </h1>
 
@@ -31,12 +31,12 @@ const HeroBannerSection = () => (
             prefix={
               <IoSearch
                 size={20}
-                className="sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                className="sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-7 lg:h-7 opacity-40 mr-5"
               />
             }
             type="text"
             placeholder="Search make, model, or type"
-            className="flex-1 text-sm sm:text-base md:text-lg px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 lg:py-4 rounded-full bg-white border-white shadow-lg"
+            className="flex-1 text-sm sm:text-base md:text-xl px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 lg:py-4 rounded-full bg-white border-white shadow-lg"
           />
         </div>
 
@@ -46,7 +46,7 @@ const HeroBannerSection = () => (
             {/* Sell your car */}
             <div className="bg-[#ECFCFA14] backdrop-blur-sm px-1 sm:px-2 md:px-3 py-2 sm:py-3 md:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-[140px] sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px]">
               <Image
-                src="https://i.ibb.co/s9qKYvVJ/Vector-2.png"
+                src="https://i.ibb.co/YTpTBFRh/Vector.png"
                 alt="Sell your car"
                 width={40}
                 height={40}
@@ -63,7 +63,7 @@ const HeroBannerSection = () => (
             {/* Car Under 5K */}
             <div className="bg-[#ecfcfa3b] backdrop-blur-sm px-1 sm:px-2 md:px-3 py-2 sm:py-3 md:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-[140px] sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px]">
               <Image
-                src="https://i.ibb.co/6J1yZRcz/GasPump.png"
+                src="https://i.ibb.co/27MJ1vfw/Vector-1.png"
                 alt="Car Under 5K"
                 width={40}
                 height={40}
@@ -80,7 +80,7 @@ const HeroBannerSection = () => (
             {/* Hybrid */}
             <div className="bg-[#ECFCFA14] backdrop-blur-sm px-1 sm:px-2 md:px-3 py-2 sm:py-3 md:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-[140px] sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px]">
               <Image
-                src="https://i.ibb.co/27MJ1vfw/Vector-1.png"
+                src="https://i.ibb.co/6J1yZRcz/GasPump.png"
                 alt="Hybrid"
                 width={40}
                 height={40}
@@ -88,7 +88,7 @@ const HeroBannerSection = () => (
               />
               <div className="flex items-center justify-center space-x-1 sm:space-x-2">
                 <h1 className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
-                  Auto Report
+                  Hybrid
                 </h1>
                 <MdArrowForwardIos className="text-xs sm:text-sm md:text-base" />
               </div>
@@ -97,15 +97,15 @@ const HeroBannerSection = () => (
             {/* Electric */}
             <div className="bg-[#ECFCFA14] backdrop-blur-sm px-1 sm:px-2 md:px-3 py-2 sm:py-3 md:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-[140px] sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px]">
               <Image
-                src="https://i.ibb.co/YTpTBFRh/Vector.png"
+                src="https://i.ibb.co/s9qKYvVJ/Vector-2.png"
                 alt="Electric"
                 width={40}
                 height={40}
-                className="h-4 w-4 sm:h-6 sm:w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 mx-auto mb-2 sm:mb-3"
+                className="h-4 w-4 sm:h-6 sm:w-6 md:h-8 md:w-8 lg:h-10 lg:w-8 mx-auto mb-2 sm:mb-3"
               />
               <div className="flex items-center justify-center space-x-1 sm:space-x-2">
                 <h1 className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
-                  Auctions
+                  Electric
                 </h1>
                 <MdArrowForwardIos className="text-xs sm:text-sm md:text-base" />
               </div>
@@ -121,23 +121,40 @@ const HeroBannerSection = () => (
           expert buying guidance -- all in one place
         </h2>
 
-        <div className="flex flex-col md:flex-row justify-between items-center py-10">
+        <div className="flex flex-col  relative md:flex-row justify-center items-center py-10">
           <Image
             src={pic2}
             alt="Left image"
-            className="w-full md:w-96 h-96 mb-8 md:mb-0"
+            className="w-full md:w-72 h-80 mb-8 md:mb-0 -bottom-5 -left-2 md:absolute -z-1"
           />
-          <div className=" w-full md:w-4/4 bg-[#ECFCFA14] text-center p-5 rounded-2xl  ">
+          <div className=" max-w-7xl  bg-[#ECFCFA14] backdrop-blur-[4px] text-center p-5 py-10 rounded-2xl  ">
             <h3 className="text-2xl sm:text-2xl md:text-4xl font-semibold mb-8 sm:mb-12">
-              How does <span className="text-[#FFE135]">Autowurx</span> work?
+              How does{" "}
+              <span className="bg-gradient-to-b from-[#FFFCEB] to-[#FFE135] text-transparent bg-clip-text">
+                Autowurx
+              </span>
+              work?
             </h3>
             <div className="md:grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 md:gap-12">
               <div className="items-center  ">
-                <div className="justify-center items-center">
-                  <div className="text-4xl sm:text-6xl font-bold text-yellow-500 mb-4">
-                    1
+                <div className="flex justify-center items-center">
+                  <div className="w-full h-auto">
+                    <div
+                      className="text-4xl sm:text-[144px] font-bold mb-4 leading-none inline-block"
+                      style={{
+                        background:
+                          "radial-gradient(circle at center,  #FFE135 0%, #FFFCEB 100%)",
+                        WebkitBackgroundClip: "text",
+                        backgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        color: "transparent",
+                      }}
+                    >
+                      1
+                    </div>
                   </div>
-                  <div className="ml-2">
+
+                  <div className="ml-2 text-start">
                     <h4 className="text-lg sm:text-md font-semibold mb-2">
                       Search
                     </h4>
@@ -150,11 +167,23 @@ const HeroBannerSection = () => (
               </div>
 
               <div className="flex flex-col items-center sm:ml-3">
-                <div className=" justify-center items-center">
-                  <div className="text-4xl sm:text-6xl font-bold text-yellow-500 mb-4">
-                    2
+                <div className="flex justify-center items-center">
+                  <div className="w-full h-auto">
+                    <div
+                      className="text-4xl sm:text-[144px] font-bold mb-4 leading-none inline-block"
+                      style={{
+                        background:
+                          "radial-gradient(circle at center,  #FFE135 0%, #FFFCEB 100%)",
+                        WebkitBackgroundClip: "text",
+                        backgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        color: "transparent",
+                      }}
+                    >
+                      2
+                    </div>
                   </div>
-                  <div className="ml-2">
+                  <div className="ml-2 text-start">
                     <h4 className="text-lg sm:text-xl font-semibold mb-2">
                       Inspect
                     </h4>
@@ -167,11 +196,23 @@ const HeroBannerSection = () => (
               </div>
 
               <div className="  flex-col items-center ">
-                <div className="  justify-center items-center">
-                  <div className="text-4xl sm:text-6xl font-bold text-yellow-500 mb-4">
-                    3
+                <div className="flex  justify-center items-center">
+                  <div className="w-full h-auto">
+                    <div
+                      className="text-4xl sm:text-[144px] mr-5 md:mr-0 font-bold mb-4 leading-none inline-block"
+                      style={{
+                        background:
+                          "radial-gradient(circle at center,  #FFE135 0%, #FFFCEB 100%)",
+                        WebkitBackgroundClip: "text",
+                        backgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        color: "transparent",
+                      }}
+                    >
+                      3
+                    </div>
                   </div>
-                  <div>
+                  <div className="text-start">
                     <h4 className="text-lg sm:text-xl font-semibold mb-2">
                       Buy
                     </h4>
@@ -193,7 +234,7 @@ const HeroBannerSection = () => (
           <Image
             src={pic1}
             alt="Right image"
-            className="w-full md:w-96 h-96 mt-8 md:mt-0"
+            className="w-full md:w-72 h-80 mt-8 md:mt-0 md:absolute -bottom-6 -right-10"
           />
         </div>
       </div>
