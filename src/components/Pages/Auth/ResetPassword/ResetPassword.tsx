@@ -1,5 +1,5 @@
 "use client";
-import InputComponent from "@/components/UI/InputComponent";
+import InputComponent from "@/components/ui/InputComponent";
 import { Form,  message } from "antd";
 import { useRouter } from "next/navigation";
 

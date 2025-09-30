@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Form, Checkbox, } from "antd";
 import google from "@/assets/Authentication/google.png";
-import InputComponent from "@/components/UI/InputComponent";
+import InputComponent from "@/components/ui/InputComponent";
 import Image from "next/image";
 import { FaLock, FaUserCircle } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Form, Checkbox, message } from "antd";
 import { useRouter } from "next/navigation";
-import InputComponent from "@/components/UI/InputComponent";
+import InputComponent from "@/components/ui/InputComponent";
 import google from "@/assets/Authentication/google.png";
 import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
