@@ -230,12 +230,12 @@ export default function SignInModal({ isOpen, onClose }: SignInModalProps) {
 
             <div className="mt-6 p-4 bg-yellow-50 rounded-lg text-center">
               <p className="font-semibold text-gray-800">Are you a Dealer?</p>
-              <p className="text-sm text-gray-600 mt-1">
+              <p className="text-sm text-gray-600 mt-1 mb-5">
                 Access leads, inventory, car dealer, and subscriptions all in one place.
               </p>
               <Link href="/signup"
                 type="button"
-                className="mt-2 bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition duration-200"
+                className="mt-5 bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition duration-200"
               >
                 Signup
               </Link>

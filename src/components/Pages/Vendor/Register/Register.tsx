@@ -183,7 +183,7 @@ export default function Register() {
             </label>
           </div>
 
-          <Link href="/signup/vendor-register">
+          <Link href="/dashboard">
           <button 
             type="submit"
             className="w-full mt-3 bg-yellow-500 hover:bg-yellow-600 text-sm font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition duration-200"
